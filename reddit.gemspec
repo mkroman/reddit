@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.files    = Dir["library/**/*.rb", "README", "LICENSE"]
   spec.homepage = "https://github.com/mkroman/reddit"
 
+  spec.add_dependency "oauth2"
   spec.add_dependency "multi_json"
   spec.add_dependency "httparty"
 

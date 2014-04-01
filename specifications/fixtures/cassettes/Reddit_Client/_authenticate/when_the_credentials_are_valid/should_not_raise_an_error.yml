@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ssl.reddit.com/api/v1/access_token
+    body:
+      encoding: US-ASCII
+      string: username=<USERNAME>&password=<PASSWORD>&grant_type=password
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Authorization:
+      - Basic <AUTH_KEY>
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Tue, 01 Apr 2014 07:08:53 GMT
+      connection:
+      - close
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '105'
+      x-frame-options:
+      - SAMEORIGIN
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      x-ratelimit-remaining:
+      - '296'
+      x-ratelimit-used:
+      - '4'
+      x-ratelimit-reset:
+      - '67'
+      server:
+      - '''; DROP TABLE servertypes; --'
+    body:
+      encoding: UTF-8
+      string: '{"access_token": "hErsB74l0aBLSAIyJg8k_wMT7H8", "token_type": "bearer",
+        "expires_in": 3600, "scope": "*"}'
+    http_version: 
+  recorded_at: Tue, 01 Apr 2014 07:08:54 GMT
+recorded_with: VCR 2.9.0

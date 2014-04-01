@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
 # Project dependencies
-gem "oauth2"
-gem "httparty"
+gem "faraday"
+gem "faraday_middleware"
 gem "multi_json"
+gem "simple_oauth"
 
 # Testing dependencies
 group :test do
